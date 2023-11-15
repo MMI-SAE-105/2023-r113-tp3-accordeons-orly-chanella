@@ -124,3 +124,25 @@
 
 </body>
 </html>
+
+<div x-data="{ open: false }" class="accordeon" x-transition.duration.800ms></div>
+        <section>
+            <button @click="open = ! open">Bouton2 </button>
+            <span x-show="open" x-transition>
+             <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+              Proin nec ex urna.  
+            </p>
+          </span>
+        </section>
+      </div>
+
+    <div x-data="{ open: false }" class="accordeon" x-transition.duration.800ms></div>
+        <section>
+            <button @click="open = ! open">Bouton3 </button>
+            <span x-show="open" x-transition>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin 
+                nec ex urna.  
+              </p>
+          </span>
+        </section>
+    </div>

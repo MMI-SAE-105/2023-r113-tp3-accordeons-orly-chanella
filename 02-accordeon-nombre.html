@@ -7,11 +7,36 @@
     <title>Accordéon mémorisant par un nombre l'élèment ouvert</title>
   </head>
   <body>
-    <div></div>
-    <section>
-      <button @click=""estOuvert =></button>
-    </section>
-    <p></p>
-    <h1>Accordéon mémorisant par un nombre l'élèment ouvert</h1>
+    <h1>Accordéon simple avec nombre</h1>
+    <div x-data="{ open: false }" class="accordeon" x-transition.duration.800ms>
+      <section >
+          <button @click="open = ! open">bouton1</button>
+          <span x-show="open" x-transition>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+              Proin nec ex urna.  
+            </p>
+        </span>
+         
+      </section>
+      <section>
+          <button @click="open = ! open">Bouton2 </button>
+          <span x-show="open" x-transition>
+           <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+            Proin nec ex urna.  
+          </p>
+        </span>
+      </section>
+      <section >
+          <button @click="open = ! open">Bouton3 </button>
+          <span x-show="open" x-transition>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin 
+              nec ex urna.  
+            </p>
+        </span>
+      </section>
+    </div>
+    
   </body>
 </html>
+
+
