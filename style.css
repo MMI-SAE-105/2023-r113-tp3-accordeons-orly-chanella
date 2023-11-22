@@ -1,0 +1,31 @@
+#accordeon {
+   
+    margin-top: 50px;
+    margin-bottom: 100px;
+    margin-right: 150px;
+    margin-left: 80px;
+    
+    }
+  
+    #accordeon li {
+  
+    }
+  
+    #accordeon li.actif {
+  
+    }
+  
+    #accordeon li figure {
+  
+    }
+  
+    #accordeon li figure figcaption {
+  
+    }
+  
+    #accordeon li figure figcaption > * {
+      
+    }
+
+    :class="{actif:isOpen === 1,}"
+    :class="{actif:ouvert ===1}"
